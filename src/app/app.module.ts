@@ -13,6 +13,7 @@ import { PricingComponent } from './pricing/pricing.component';
 import { ContactComponent } from './contact/contact.component';
 import { FindCampaignSnapshotComponent } from './findCampaign/find-campaign-snapshot/find-campaign-snapshot.component';
 import { StartCampaignComponent } from './startCampaign/start-campaign/start-campaign.component';
+import { StartCampaignNonProfitForm1Component } from './startCampaign/start-campaign-non-profit-form1/start-campaign-non-profit-form1.component';
 
 
 @NgModule({
@@ -25,8 +26,11 @@ import { StartCampaignComponent } from './startCampaign/start-campaign/start-cam
     AboutComponent,
     PricingComponent,
     ContactComponent,
+    
     FindCampaignSnapshotComponent,
-    StartCampaignComponent
+
+    StartCampaignComponent,
+    StartCampaignNonProfitForm1Component
   ],
   imports: [
     BrowserModule,

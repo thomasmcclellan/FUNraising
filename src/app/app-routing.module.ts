@@ -7,6 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { FindCampaignSnapshotComponent } from './findCampaign/find-campaign-snapshot/find-campaign-snapshot.component';
 import { StartCampaignComponent } from './startCampaign/start-campaign/start-campaign.component';
+import { StartCampaignNonProfitForm1Component } from './startCampaign/start-campaign-non-profit-form1/start-campaign-non-profit-form1.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -15,8 +16,11 @@ const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'pricing', component: PricingComponent },
+
   { path: 'snapshot', component: FindCampaignSnapshotComponent },
+
   { path: 'startCampaign', component: StartCampaignComponent },
+  { path: 'startCampaign/nonprofit/form1', component: StartCampaignNonProfitForm1Component },
 ]
 
 @NgModule({
