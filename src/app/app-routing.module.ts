@@ -15,6 +15,7 @@ import { StartCampaignNonProfitForm1Component } from './startCampaign/start-camp
 import { StartCampaignNonProfitForm2Component } from './startCampaign/start-campaign-non-profit-form2/start-campaign-non-profit-form2.component';
 
 import { StartCampaignPersonalForm1Component } from './startCampaign/start-campaign-personal-form1/start-campaign-personal-form1.component';
+import { StartCampaignNonProfitConfirmComponent } from './startCampaign/start-campaign-non-profit-confirm/start-campaign-non-profit-confirm.component';
 
 
 const appRoutes: Routes = [
@@ -31,6 +32,8 @@ const appRoutes: Routes = [
   { path: 'startCampaign/nonprofit/success', component: StartCampaignNonProfitSuccessComponent },
   { path: 'startCampaign/nonprofit/form1', component: StartCampaignNonProfitForm1Component },
   { path: 'startCampaign/nonprofit/form2', component: StartCampaignNonProfitForm2Component },
+  { path: 'startCampaign/nonprofit/confirmation', component: StartCampaignNonProfitConfirmComponent },
+
   { path: 'startCampaign/personalCause/form1', component: StartCampaignPersonalForm1Component },
 ]
 

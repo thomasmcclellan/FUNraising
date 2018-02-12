@@ -20,6 +20,7 @@ import { StartCampaignNonProfitForm1Component } from './startCampaign/start-camp
 import { StartCampaignPersonalForm1Component } from './startCampaign/start-campaign-personal-form1/start-campaign-personal-form1.component';
 import { StartCampaignPersonalForm2Component } from './startCampaign/start-campaign-personal-form2/start-campaign-personal-form2.component';
 import { StartCampaignNonProfitForm2Component } from './startCampaign/start-campaign-non-profit-form2/start-campaign-non-profit-form2.component';
+import { StartCampaignNonProfitConfirmComponent } from './startCampaign/start-campaign-non-profit-confirm/start-campaign-non-profit-confirm.component';
 
 
 @NgModule({
@@ -40,9 +41,11 @@ import { StartCampaignNonProfitForm2Component } from './startCampaign/start-camp
     StartCampaignNonProfitSuccessComponent,
     StartCampaignNonProfitForm1Component,
     StartCampaignNonProfitForm2Component,
+    StartCampaignNonProfitConfirmComponent,
 
     StartCampaignPersonalForm1Component,
     StartCampaignPersonalForm2Component,
+    
     
   ],
   imports: [
