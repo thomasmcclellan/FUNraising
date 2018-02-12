@@ -17,7 +17,6 @@ import { StartCampaignNonProfitForm2Component } from './startCampaign/start-camp
 import { StartCampaignPersonalForm1Component } from './startCampaign/start-campaign-personal-form1/start-campaign-personal-form1.component';
 import { StartCampaignNonProfitConfirmComponent } from './startCampaign/start-campaign-non-profit-confirm/start-campaign-non-profit-confirm.component';
 
-
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
