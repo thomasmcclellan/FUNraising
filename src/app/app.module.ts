@@ -15,12 +15,18 @@ import { ContactComponent } from './contact/contact.component';
 import { FindCampaignSnapshotComponent } from './findCampaign/find-campaign-snapshot/find-campaign-snapshot.component';
 
 import { StartCampaignComponent } from './startCampaign/start-campaign/start-campaign.component';
-import { StartCampaignNonProfitSuccessComponent } from './startCampaign/start-campaign-non-profit-success/start-campaign-non-profit-success.component';
-import { StartCampaignNonProfitForm1Component } from './startCampaign/start-campaign-non-profit-form1/start-campaign-non-profit-form1.component';
-import { StartCampaignPersonalForm1Component } from './startCampaign/start-campaign-personal-form1/start-campaign-personal-form1.component';
-import { StartCampaignPersonalForm2Component } from './startCampaign/start-campaign-personal-form2/start-campaign-personal-form2.component';
-import { StartCampaignNonProfitForm2Component } from './startCampaign/start-campaign-non-profit-form2/start-campaign-non-profit-form2.component';
-import { StartCampaignNonProfitConfirmComponent } from './startCampaign/start-campaign-non-profit-confirm/start-campaign-non-profit-confirm.component';
+
+import { StartCampaignNonProfitSuccessComponent } from './startCampaign/nonProfit/start-campaign-non-profit-success/start-campaign-non-profit-success.component';
+import { StartCampaignNonProfitForm1Component } from './startCampaign/nonProfit/start-campaign-non-profit-form1/start-campaign-non-profit-form1.component';
+import { StartCampaignNonProfitForm2Component } from './startCampaign/nonProfit/start-campaign-non-profit-form2/start-campaign-non-profit-form2.component';
+import { StartCampaignNonProfitConfirmComponent } from './startCampaign/nonProfit/start-campaign-non-profit-confirm/start-campaign-non-profit-confirm.component';
+
+import { StartCampaignPersonalForm1Component } from './startCampaign/personalCause/start-campaign-personal-form1/start-campaign-personal-form1.component';
+import { StartCampaignPersonalForm2Component } from './startCampaign/personalCause/start-campaign-personal-form2/start-campaign-personal-form2.component';
+
+import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.component';
+import { StartCampaignPersonalSuccessComponent } from './startCampaign/personalCause/start-campaign-personal-success/start-campaign-personal-success.component';
+import { StartCampaignPersonalConfirmComponent } from './startCampaign/personalCause/start-campaign-personal-confirm/start-campaign-personal-confirm.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +49,13 @@ import { StartCampaignNonProfitConfirmComponent } from './startCampaign/start-ca
     StartCampaignNonProfitConfirmComponent,
 
     StartCampaignPersonalForm1Component,
-    StartCampaignPersonalForm2Component,    
+    StartCampaignPersonalForm2Component,
+    
+    DeleteCampaignComponent,
+    
+    StartCampaignPersonalSuccessComponent,
+    
+    StartCampaignPersonalConfirmComponent,    
     
   ],
   imports: [

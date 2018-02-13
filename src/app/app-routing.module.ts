@@ -10,12 +10,19 @@ import { FindCampaignSnapshotComponent } from './findCampaign/find-campaign-snap
 
 import { StartCampaignComponent } from './startCampaign/start-campaign/start-campaign.component';
 
-import { StartCampaignNonProfitSuccessComponent } from './startCampaign/start-campaign-non-profit-success/start-campaign-non-profit-success.component';
-import { StartCampaignNonProfitForm1Component } from './startCampaign/start-campaign-non-profit-form1/start-campaign-non-profit-form1.component';
-import { StartCampaignNonProfitForm2Component } from './startCampaign/start-campaign-non-profit-form2/start-campaign-non-profit-form2.component';
+import { StartCampaignNonProfitSuccessComponent } from './startCampaign/nonProfit/start-campaign-non-profit-success/start-campaign-non-profit-success.component';
+import { StartCampaignNonProfitForm1Component } from './startCampaign/nonProfit/start-campaign-non-profit-form1/start-campaign-non-profit-form1.component';
+import { StartCampaignNonProfitForm2Component } from './startCampaign/nonProfit/start-campaign-non-profit-form2/start-campaign-non-profit-form2.component';
+import { StartCampaignNonProfitConfirmComponent } from './startCampaign/nonProfit/start-campaign-non-profit-confirm/start-campaign-non-profit-confirm.component';
 
-import { StartCampaignPersonalForm1Component } from './startCampaign/start-campaign-personal-form1/start-campaign-personal-form1.component';
-import { StartCampaignNonProfitConfirmComponent } from './startCampaign/start-campaign-non-profit-confirm/start-campaign-non-profit-confirm.component';
+
+import { StartCampaignPersonalForm1Component } from './startCampaign/personalCause/start-campaign-personal-form1/start-campaign-personal-form1.component';
+import { StartCampaignPersonalSuccessComponent } from './startCampaign/personalCause/start-campaign-personal-success/start-campaign-personal-success.component';
+import { StartCampaignPersonalForm2Component } from './startCampaign/personalCause/start-campaign-personal-form2/start-campaign-personal-form2.component';
+import { StartCampaignPersonalConfirmComponent } from './startCampaign/personalCause/start-campaign-personal-confirm/start-campaign-personal-confirm.component';
+
+import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.component';
+
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -28,12 +35,18 @@ const appRoutes: Routes = [
   { path: 'snapshot', component: FindCampaignSnapshotComponent },
 
   { path: 'startCampaign', component: StartCampaignComponent },
-  { path: 'startCampaign/nonprofit/success', component: StartCampaignNonProfitSuccessComponent },
-  { path: 'startCampaign/nonprofit/form1', component: StartCampaignNonProfitForm1Component },
-  { path: 'startCampaign/nonprofit/form2', component: StartCampaignNonProfitForm2Component },
-  { path: 'startCampaign/nonprofit/confirmation', component: StartCampaignNonProfitConfirmComponent },
 
-  { path: 'startCampaign/personalCause/form1', component: StartCampaignPersonalForm1Component },
+  { path: 'startCampaign-nonprofit-success', component: StartCampaignNonProfitSuccessComponent },
+  { path: 'startCampaign-nonprofit-form1', component: StartCampaignNonProfitForm1Component },
+  { path: 'startCampaign-nonprofit-form2', component: StartCampaignNonProfitForm2Component },
+  { path: 'startCampaign-nonprofit-confirmation', component: StartCampaignNonProfitConfirmComponent },
+
+  { path: 'startCampaign-personalCause-success', component: StartCampaignPersonalSuccessComponent },
+  { path: 'startCampaign-personalCause-form1', component: StartCampaignPersonalForm1Component },
+  { path: 'startCampaign-personalCause-form2', component: StartCampaignPersonalForm2Component },
+  { path: 'startCampaign-personalCause-confirmation', component: StartCampaignPersonalConfirmComponent },
+
+  { path: 'deleteCampaign', component: DeleteCampaignComponent }
 ]
 
 @NgModule({
