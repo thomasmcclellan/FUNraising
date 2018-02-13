@@ -7,6 +7,8 @@ import { ContactComponent } from './contact/contact.component';
 import { PricingComponent } from './pricing/pricing.component';
 
 import { FindCampaignSnapshotComponent } from './findCampaign/find-campaign-snapshot/find-campaign-snapshot.component';
+import { FindCampaignComponent } from './findCampaign/find-campaign/find-campaign.component';
+import { FindCampaignCategoryComponent } from './findCampaign/find-campaign-category/find-campaign-category.component';
 
 import { StartCampaignComponent } from './startCampaign/start-campaign/start-campaign.component';
 import { StartCampaignNonProfitSuccessComponent } from './startCampaign/nonProfit/start-campaign-non-profit-success/start-campaign-non-profit-success.component';
@@ -19,8 +21,7 @@ import { StartCampaignPersonalForm2Component } from './startCampaign/personalCau
 import { StartCampaignPersonalConfirmComponent } from './startCampaign/personalCause/start-campaign-personal-confirm/start-campaign-personal-confirm.component';
 
 import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.component';
-import { FindCampaignComponent } from './findCampaign/find-campaign/find-campaign.component';
-import { FindCampaignCategoryComponent } from './findCampaign/find-campaign-category/find-campaign-category.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 const appRoutes: Routes = [
@@ -30,6 +31,7 @@ const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'pricing', component: PricingComponent },
+  { path: 'profile', component: ProfileComponent },
 
   { path: 'snapshot', component: FindCampaignSnapshotComponent },
   { path: 'findCampaign', component: FindCampaignComponent },

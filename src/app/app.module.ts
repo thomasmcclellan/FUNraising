@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -13,6 +12,8 @@ import { PricingComponent } from './pricing/pricing.component';
 import { ContactComponent } from './contact/contact.component';
 
 import { FindCampaignSnapshotComponent } from './findCampaign/find-campaign-snapshot/find-campaign-snapshot.component';
+import { FindCampaignComponent } from './findCampaign/find-campaign/find-campaign.component';
+import { FindCampaignCategoryComponent } from './findCampaign/find-campaign-category/find-campaign-category.component';
 
 import { StartCampaignComponent } from './startCampaign/start-campaign/start-campaign.component';
 import { StartCampaignNonProfitSuccessComponent } from './startCampaign/nonProfit/start-campaign-non-profit-success/start-campaign-non-profit-success.component';
@@ -25,9 +26,7 @@ import { StartCampaignPersonalForm2Component } from './startCampaign/personalCau
 import { StartCampaignPersonalConfirmComponent } from './startCampaign/personalCause/start-campaign-personal-confirm/start-campaign-personal-confirm.component';
 
 import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.component';
-import { FindCampaignComponent } from './findCampaign/find-campaign/find-campaign.component';
-import { FindCampaignCategoryComponent } from './findCampaign/find-campaign-category/find-campaign-category.component';
-
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +40,8 @@ import { FindCampaignCategoryComponent } from './findCampaign/find-campaign-cate
     ContactComponent,
     
     FindCampaignSnapshotComponent,
+    FindCampaignComponent,
+    FindCampaignCategoryComponent,
 
     StartCampaignComponent,
     StartCampaignNonProfitSuccessComponent,
@@ -54,9 +55,7 @@ import { FindCampaignCategoryComponent } from './findCampaign/find-campaign-cate
     
     DeleteCampaignComponent,
     
-    FindCampaignComponent,
-    
-    FindCampaignCategoryComponent
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
