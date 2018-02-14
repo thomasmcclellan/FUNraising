@@ -3,7 +3,7 @@
     <h1>Discover New Campaigns!</h1>
     <h5>***NUMBER*** Campaigns are Currently Active!</h5>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-2">
     <h3>Search Campaigns</h3>
     <div class="input-group">
       <input type="text" class="form-control" placeholder="Search Campaign">
@@ -11,34 +11,110 @@
         <button class="btn btn-default" type="button">Search</button>
       </span>
     </div><br>
-    <!-- Accordion to reveal categories -->
-    <button type="button" class="btn btn-primary">Filter Campaigns</button>
-    <ul>
-      <li><a routerLink="/browseCategory"><i class="fas fa-paw fa-2x" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i> Animals (***Number***)</a></li>
-      <li><a routerLink="/browseCategory"><i class="fas fa-paint-brush fa-2x" data-fa-transform="shrink-5.5" data-fa-mask="fas fa-circle"></i> Arts & Culture (***Number***)</a></li>
-      <li><a routerLink="/browseCategory"><i class="fas fa-child fa-2x" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i> Children & Youth (***Number***)</a></li>
-      <li><a routerLink="/browseCategory"><i class="fas fa-universal-access fa-2x"></i> Disabilities (***Number***)</a></li>
-      <li><a routerLink="/browseCategory"><i class="fas fa-ambulance fa-2x" data-fa-transform="shrink-6.5" data-fa-mask="fas fa-circle"></i> Disaster Relief (***Number***)</a></li>
-      <li><a routerLink="/browseCategory"><i class="fas fa-dollar-sign fa-2x" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i> Economic Development (***Number***)</a></li>
-      <li><a routerLink="/browseCategory"><i class="fas fa-graduation-cap fa-2x" data-fa-transform="shrink-5.5" data-fa-mask="fas fa-circle"></i> Education (***Number***)</a></li>
-      <li><a routerLink="/browseCategory"><i class="fas fa-leaf fa-2x" data-fa-transform="shrink-5.5" data-fa-mask="fas fa-circle"></i> Environment (***Number***)</a></li>
-      <li><a routerLink="/browseCategory"><i class="fas fa-users fa-2x" data-fa-transform="shrink-5.5" data-fa-mask="fas fa-circle"></i> Faith (***Number***)</a></li>
-      <li><a routerLink="/browseCategory"><i class="fas fa-female fa-2x" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i> Girls & Women (***Number***)</a></li>
-      <li><a routerLink="/browseCategory"><i class="fas fa-globe fa-2x"></i> Global Issues (***Number***)</a></li>
-      <li><a routerLink="/browseCategory"><i class="fas fa-heartbeat fa-2x" data-fa-transform="shrink-5.5" data-fa-mask="fas fa-circle"></i> Health (***Number***)</a></li>
-      <li><a routerLink="/browseCategory"><i class="fas fa-utensils fa-2x" data-fa-transform="shrink-5.5" data-fa-mask="fas fa-circle"></i> Poverty (***Number***)</a></li>
-      <li><a routerLink="/browseCategory"><i class="fas fa-flask fa-2x" data-fa-transform="shrink-5.5" data-fa-mask="fas fa-circle"></i> Science & Technology (***Number***)</a></li>
-      <li><a routerLink="/browseCategory"><i class="fas fa-fighter-jet fa-2x" data-fa-transform="shrink-5.5" data-fa-mask="fas fa-circle"></i> Veterans (***Number***)</a></li>
-    </ul>
+    <!-- Accordion to hide/show categories => currently not working -->
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Filter Campaigns
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <ul>
+              <li><a routerLink="/browseCategory"><i class="fas fa-paw fa-2x" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i> Animals <span class="badge">***Number***</span></a></li>
+              <li><a routerLink="/browseCategory"><i class="fas fa-paint-brush fa-2x" data-fa-transform="shrink-5.5" data-fa-mask="fas fa-circle"></i> Arts & Culture <span class="badge">***Number***</span></a></li>
+              <li><a routerLink="/browseCategory"><i class="fas fa-child fa-2x" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i> Children & Youth <span class="badge">***Number***</span></a></li>
+              <li><a routerLink="/browseCategory"><i class="fas fa-universal-access fa-2x"></i> Disabilities <span class="badge">***Number***</span></a></li>
+              <li><a routerLink="/browseCategory"><i class="fas fa-ambulance fa-2x" data-fa-transform="shrink-6.5" data-fa-mask="fas fa-circle"></i> Disaster Relief <span class="badge">***Number***</span></a></li>
+              <li><a routerLink="/browseCategory"><i class="fas fa-dollar-sign fa-2x" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i> Economic Development <span class="badge">***Number***</span></a></li>
+              <li><a routerLink="/browseCategory"><i class="fas fa-graduation-cap fa-2x" data-fa-transform="shrink-5.5" data-fa-mask="fas fa-circle"></i> Education <span class="badge">***Number***</span></a></li>
+              <li><a routerLink="/browseCategory"><i class="fas fa-leaf fa-2x" data-fa-transform="shrink-5.5" data-fa-mask="fas fa-circle"></i> Environment <span class="badge">***Number***</span></a></li>
+              <li><a routerLink="/browseCategory"><i class="fas fa-users fa-2x" data-fa-transform="shrink-5.5" data-fa-mask="fas fa-circle"></i> Faith <span class="badge">***Number***</span></a></li>
+              <li><a routerLink="/browseCategory"><i class="fas fa-female fa-2x" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i> Girls & Women <span class="badge">***Number***</span></a></li>
+              <li><a routerLink="/browseCategory"><i class="fas fa-globe fa-2x"></i> Global Issues <span class="badge">***Number***</span></a></li>
+              <li><a routerLink="/browseCategory"><i class="fas fa-heartbeat fa-2x" data-fa-transform="shrink-5.5" data-fa-mask="fas fa-circle"></i> Health <span class="badge">***Number***</span></a></li>
+              <li><a routerLink="/browseCategory"><i class="fas fa-utensils fa-2x" data-fa-transform="shrink-5.5" data-fa-mask="fas fa-circle"></i> Poverty <span class="badge">***Number***</span></a></li>
+              <li><a routerLink="/browseCategory"><i class="fas fa-flask fa-2x" data-fa-transform="shrink-5.5" data-fa-mask="fas fa-circle"></i> Science & Technology <span class="badge">***Number***</span></a></li>
+              <li><a routerLink="/browseCategory"><i class="fas fa-fighter-jet fa-2x" data-fa-transform="shrink-5.5" data-fa-mask="fas fa-circle"></i> Veterans <span class="badge">***Number***</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="col-md-8">
+  <div class="col-md-10">
     <div class="col-md-12">
-      <h3>Active Campaigns (***Number***)</h3>
-      <p>Cards Here (Active)</p>
+      <h3 style="text-align: center">Active Campaigns <span class="badge">***Number***</span></h3>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="../assets/jumbo.jpeg">
+            <div class="caption">
+              <h4>***Campaign Title***</h4>
+              <h5>By: ***Campaign Creator***</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magnam ipsum assumenda perspiciatis veritatis quisquam labore ad iusto voluptatum commodi aperiam a autem, neque vero voluptas, consequuntur vel eum expedita.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="../assets/jumbo.jpeg">
+            <div class="caption">
+              <h4>***Campaign Title***</h4>
+              <h5>By: ***Campaign Creator***</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magnam ipsum assumenda perspiciatis veritatis quisquam labore ad iusto voluptatum commodi aperiam a autem, neque vero voluptas, consequuntur vel eum expedita.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="../assets/jumbo.jpeg">
+            <div class="caption">
+              <h4>***Campaign Title***</h4>
+              <h5>By: ***Campaign Creator***</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magnam ipsum assumenda perspiciatis veritatis quisquam labore ad iusto voluptatum commodi aperiam a autem, neque vero voluptas, consequuntur vel eum expedita.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="col-md-12">
-      <h3>Completed Campaigns (***Number***)</h3>
-      <p>Cards Here (Completed)</p>
+      <h3 style="text-align: center">Completed Campaigns <span class="badge">***Number***</span></h3>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="../assets/jumbo.jpeg">
+            <div class="caption">
+              <h4>***Campaign Title***</h4>
+              <h5>By: ***Campaign Creator***</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magnam ipsum assumenda perspiciatis veritatis quisquam labore ad iusto voluptatum commodi aperiam a autem, neque vero voluptas, consequuntur vel eum expedita.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="../assets/jumbo.jpeg">
+            <div class="caption">
+              <h4>***Campaign Title***</h4>
+              <h5>By: ***Campaign Creator***</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magnam ipsum assumenda perspiciatis veritatis quisquam labore ad iusto voluptatum commodi aperiam a autem, neque vero voluptas, consequuntur vel eum expedita.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="../assets/jumbo.jpeg">
+            <div class="caption">
+              <h4>***Campaign Title***</h4>
+              <h5>By: ***Campaign Creator***</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magnam ipsum assumenda perspiciatis veritatis quisquam labore ad iusto voluptatum commodi aperiam a autem, neque vero voluptas, consequuntur vel eum expedita.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div><br>
