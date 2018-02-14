@@ -5,6 +5,7 @@ import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { ProfileComponent } from './profile/profile.component';
 
 import { FindCampaignSnapshotComponent } from './findCampaign/find-campaign-snapshot/find-campaign-snapshot.component';
 import { FindCampaignComponent } from './findCampaign/find-campaign/find-campaign.component';
@@ -21,7 +22,6 @@ import { StartCampaignPersonalForm2Component } from './startCampaign/personalCau
 import { StartCampaignPersonalConfirmComponent } from './startCampaign/personalCause/start-campaign-personal-confirm/start-campaign-personal-confirm.component';
 
 import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.component';
-import { ProfileComponent } from './profile/profile.component';
 
 
 const appRoutes: Routes = [
