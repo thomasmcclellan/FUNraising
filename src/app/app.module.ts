@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProfileComponent } from './profile/profile.component';
+import { CampaignComponent } from './campaign/campaign.component';
 
 import { FindCampaignSnapshotComponent } from './findCampaign/find-campaign-snapshot/find-campaign-snapshot.component';
 import { FindCampaignComponent } from './findCampaign/find-campaign/find-campaign.component';
@@ -27,7 +28,6 @@ import { StartCampaignPersonalForm2Component } from './startCampaign/personalCau
 import { StartCampaignPersonalConfirmComponent } from './startCampaign/personalCause/start-campaign-personal-confirm/start-campaign-personal-confirm.component';
 
 import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.component';
-import { CampaignComponent } from './campaign/campaign.component';
 
 
 @NgModule({
@@ -41,6 +41,7 @@ import { CampaignComponent } from './campaign/campaign.component';
     PricingComponent,
     ContactComponent,
     ProfileComponent,
+    CampaignComponent,
     
     FindCampaignSnapshotComponent,
     FindCampaignComponent,
@@ -56,9 +57,7 @@ import { CampaignComponent } from './campaign/campaign.component';
     StartCampaignPersonalForm2Component,
     StartCampaignPersonalConfirmComponent,
     
-    DeleteCampaignComponent,
-    
-    CampaignComponent
+    DeleteCampaignComponent
   ],
   imports: [
     BrowserModule,
