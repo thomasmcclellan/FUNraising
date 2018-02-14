@@ -23,6 +23,7 @@ import { StartCampaignPersonalForm2Component } from './startCampaign/personalCau
 import { StartCampaignPersonalConfirmComponent } from './startCampaign/personalCause/start-campaign-personal-confirm/start-campaign-personal-confirm.component';
 
 import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.component';
+import { FaqComponent } from './faq/faq.component';
 
 
 const appRoutes: Routes = [
@@ -34,6 +35,7 @@ const appRoutes: Routes = [
   { path: 'pricing', component: PricingComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'campaign', component: CampaignComponent },
+  { path: 'faq', component: FaqComponent },
 
   { path: 'snapshot', component: FindCampaignSnapshotComponent },
   { path: 'findCampaign', component: FindCampaignComponent },

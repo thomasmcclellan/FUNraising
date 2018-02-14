@@ -28,6 +28,7 @@ import { StartCampaignPersonalForm2Component } from './startCampaign/personalCau
 import { StartCampaignPersonalConfirmComponent } from './startCampaign/personalCause/start-campaign-personal-confirm/start-campaign-personal-confirm.component';
 
 import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.component';
+import { FaqComponent } from './faq/faq.component';
 
 
 @NgModule({
@@ -57,7 +58,9 @@ import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.compo
     StartCampaignPersonalForm2Component,
     StartCampaignPersonalConfirmComponent,
     
-    DeleteCampaignComponent
+    DeleteCampaignComponent,
+    
+    FaqComponent
   ],
   imports: [
     BrowserModule,

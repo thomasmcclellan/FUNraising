@@ -11,18 +11,15 @@
         <button class="btn btn-default" type="button">Search</button>
       </span>
     </div><br>
-    <!-- Accordion to hide/show categories => currently not working -->
-    <div id="accordion">
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Filter Campaigns
-            </button>
-          </h5>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <h4 class="panel-title">Filter by Category</h4>
+          </a>
         </div>
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-          <div class="card-body">
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
             <a routerLink="/browseCategory"><i class="fas fa-paw fa-2x" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i> Animals <span class="badge">5</span></a><br>
             <a routerLink="/browseCategory"><i class="fas fa-paint-brush fa-2x" data-fa-transform="shrink-5.5" data-fa-mask="fas fa-circle"></i> Arts & Culture <span class="badge">5</span></a><br>
             <a routerLink="/browseCategory"><i class="fas fa-child fa-2x" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i> Children & Youth <span class="badge">5</span></a><br>
