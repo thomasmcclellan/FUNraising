@@ -7,11 +7,13 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
+import { HowToSucceedComponent } from './how-to-succeed/how-to-succeed.component';
 import { AboutComponent } from './about/about.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CampaignComponent } from './campaign/campaign.component';
+import { FaqComponent } from './faq/faq.component';
 
 import { FindCampaignSnapshotComponent } from './findCampaign/find-campaign-snapshot/find-campaign-snapshot.component';
 import { FindCampaignComponent } from './findCampaign/find-campaign/find-campaign.component';
@@ -28,7 +30,6 @@ import { StartCampaignPersonalForm2Component } from './startCampaign/personalCau
 import { StartCampaignPersonalConfirmComponent } from './startCampaign/personalCause/start-campaign-personal-confirm/start-campaign-personal-confirm.component';
 
 import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.component';
-import { FaqComponent } from './faq/faq.component';
 
 
 @NgModule({
@@ -38,6 +39,8 @@ import { FaqComponent } from './faq/faq.component';
     FooterComponent,
     HomeComponent,
     HowItWorksComponent,
+    HowToSucceedComponent,
+    FaqComponent,
     AboutComponent,
     PricingComponent,
     ContactComponent,
@@ -59,8 +62,6 @@ import { FaqComponent } from './faq/faq.component';
     StartCampaignPersonalConfirmComponent,
     
     DeleteCampaignComponent,
-    
-    FaqComponent
   ],
   imports: [
     BrowserModule,

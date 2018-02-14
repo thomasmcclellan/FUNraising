@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
+import { HowToSucceedComponent } from './how-to-succeed/how-to-succeed.component';
+import { FaqComponent } from './faq/faq.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PricingComponent } from './pricing/pricing.component';
@@ -23,19 +25,19 @@ import { StartCampaignPersonalForm2Component } from './startCampaign/personalCau
 import { StartCampaignPersonalConfirmComponent } from './startCampaign/personalCause/start-campaign-personal-confirm/start-campaign-personal-confirm.component';
 
 import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.component';
-import { FaqComponent } from './faq/faq.component';
 
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'howItWorks', component: HowItWorksComponent },
+  { path: 'howToSucceed', component: HowToSucceedComponent },
+  { path: 'faq', component: FaqComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'pricing', component: PricingComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'campaign', component: CampaignComponent },
-  { path: 'faq', component: FaqComponent },
 
   { path: 'snapshot', component: FindCampaignSnapshotComponent },
   { path: 'findCampaign', component: FindCampaignComponent },
