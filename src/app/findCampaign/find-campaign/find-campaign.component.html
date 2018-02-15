@@ -3,22 +3,25 @@
     <h1>Discover New Campaigns!</h1>
     <h5>22 Campaigns are Currently Active!</h5>
   </div>
+
+  <!-- Search/filter card -->
   <div class="col-md-3">
     <h3>Search Campaigns</h3>
     <div class="input-group">
       <input type="text" class="form-control" placeholder="Search Campaign">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Search</button>
+        <button class="btn btn-primary" type="button">Search</button>
       </span>
     </div><br>
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingOne">
-          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+
+        <a role="button" data-toggle="collapse" data-target="#collapse">
+          <div class="panel-heading" role="tab" id="heading" style="background: #e3e3e3">
             <h4 class="panel-title">Filter by Category</h4>
-          </a>
-        </div>
-        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          </div>
+        </a>
+        <div id="collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading">
           <div class="panel-body">
             <a routerLink="/browseCategory"><i class="fas fa-paw fa-2x" data-fa-transform="shrink-3.5" data-fa-mask="fas fa-circle"></i> Animals <span class="badge">5</span></a><br>
             <a routerLink="/browseCategory"><i class="fas fa-paint-brush fa-2x" data-fa-transform="shrink-5.5" data-fa-mask="fas fa-circle"></i> Arts & Culture <span class="badge">5</span></a><br>
@@ -40,13 +43,18 @@
       </div>
     </div>
   </div>
+  
+  <!-- Card area -->
   <div class="col-md-9">
+    <!-- Active Campaigns -->
     <div class="col-md-12">
       <h3 style="text-align: center">Active Campaigns <span class="badge">22</span></h3>
       <div class="row">
+
+        <!-- Card 1 -->
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img src="../assets/jumbo.jpeg">
+            <a routerLink=""><img src="../assets/jumbo.jpeg"></a>
             <nav class="navbar navbar-default">
               <div class="container-fluid">
                 <div>
@@ -58,18 +66,19 @@
               </div>
             </nav>
             <div class="caption">
-              <h4 style="text-align: center">***Campaign Title***</h4>
-              <h5 style="text-align: center">By: ***Campaign Creator***</h5>
+              <h4 style="text-align: center"><a routerLink="">***Campaign Title***</a></h4>
+              <h5 style="text-align: center"><a routerLink="/profile">By: ***Campaign Creator***</a></h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magnam ipsum assumenda perspiciatis veritatis quisquam labore ad iusto voluptatum commodi aperiam a autem, neque vero voluptas, consequuntur vel eum expedita.</p>
             </div>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                 60%
               </div>
             </div>
             <div class="row">
               <div class="col-md-12" style="text-align: center">
                 <h3><b>$6,000</b> raised!</h3>
+                <h6>With 17 people!</h6>
               </div>
               <div class="col-md-6" style="text-align: center">
                 <h6>Goal</h6>
@@ -82,10 +91,11 @@
             </div>
           </div>
         </div>
-  
+
+        <!-- Card 2 -->
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img src="../assets/jumbo.jpeg">
+            <a routerLink=""><img src="../assets/jumbo.jpeg"></a>
             <nav class="navbar navbar-default">
               <div class="container-fluid">
                 <div>
@@ -97,18 +107,19 @@
               </div>
             </nav>
             <div class="caption">
-              <h4 style="text-align: center">***Campaign Title***</h4>
-              <h5 style="text-align: center">By: ***Campaign Creator***</h5>
+              <h4 style="text-align: center"><a routerLink="">***Campaign Title***</a></h4>
+              <h5 style="text-align: center"><a routerLink="/profile">By: ***Campaign Creator***</a></h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magnam ipsum assumenda perspiciatis veritatis quisquam labore ad iusto voluptatum commodi aperiam a autem, neque vero voluptas, consequuntur vel eum expedita.</p>
             </div>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                 60%
               </div>
             </div>
             <div class="row">
               <div class="col-md-12" style="text-align: center">
                 <h3><b>$6,000</b> raised!</h3>
+                <h6>With 17 people!</h6>
               </div>
               <div class="col-md-6" style="text-align: center">
                 <h6>Goal</h6>
@@ -121,10 +132,11 @@
             </div>
           </div>
         </div>
-  
+
+        <!-- Card 3 -->
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img src="../assets/jumbo.jpeg">
+            <a routerLink=""><img src="../assets/jumbo.jpeg"></a>
             <nav class="navbar navbar-default">
               <div class="container-fluid">
                 <div>
@@ -136,18 +148,19 @@
               </div>
             </nav>
             <div class="caption">
-              <h4 style="text-align: center">***Campaign Title***</h4>
-              <h5 style="text-align: center">By: ***Campaign Creator***</h5>
+              <h4 style="text-align: center"><a routerLink="">***Campaign Title***</a></h4>
+              <h5 style="text-align: center"><a routerLink="/profile">By: ***Campaign Creator***</a></h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magnam ipsum assumenda perspiciatis veritatis quisquam labore ad iusto voluptatum commodi aperiam a autem, neque vero voluptas, consequuntur vel eum expedita.</p>
             </div>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                 60%
               </div>
             </div>
             <div class="row">
               <div class="col-md-12" style="text-align: center">
                 <h3><b>$6,000</b> raised!</h3>
+                <h6>With 17 people!</h6>
               </div>
               <div class="col-md-6" style="text-align: center">
                 <h6>Goal</h6>
@@ -162,35 +175,41 @@
         </div>
       </div>
     </div>
+
+    <!-- Completed Campaign section -->
     <div class="col-md-12">
       <h3 style="text-align: center">Completed Campaigns <span class="badge">22</span></h3>
       <div class="row">
+
+
+        <!-- Card 1 -->
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img src="../assets/jumbo.jpeg">
+            <a routerLink=""><img src="../assets/jumbo.jpeg"></a>
             <nav class="navbar navbar-default">
               <div class="container-fluid">
                 <div>
                   <p class="navbar-text navbar-left"><a routerLink="/browseCategory">***Category***</a></p>
                 </div>
                 <div>
-                  <p class="navbar-text navbar-right"><a routerLink="">$</a></p>
+                  <p class="navbar-text navbar-right">$</p>
                 </div>
               </div>
             </nav>
             <div class="caption">
-              <h4 style="text-align: center">***Campaign Title***</h4>
-              <h5 style="text-align: center">By: ***Campaign Creator***</h5>
+              <h4 style="text-align: center"><a routerLink="">***Campaign Title***</a></h4>
+              <h5 style="text-align: center"><a routerLink="/profile">By: ***Campaign Creator***</a></h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magnam ipsum assumenda perspiciatis veritatis quisquam labore ad iusto voluptatum commodi aperiam a autem, neque vero voluptas, consequuntur vel eum expedita.</p>
             </div>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
                 100%
               </div>
             </div>
             <div class="row">
               <div class="col-md-12" style="text-align: center">
                 <h3><b>$10,000</b> raised!</h3>
+                <h6>With 35 people!</h6>
               </div>
               <div class="col-md-6" style="text-align: center">
                 <h6>Goal</h6>
@@ -198,38 +217,40 @@
               </div>
               <div class="col-md-6" style="text-align: center">
                 <h6>Days Left</h6>
-                <h5><b>0</b></h5>
+                <h5><b style="color: red">0</b></h5>
               </div>
             </div>
           </div>
         </div>
-  
+
+        <!-- Card 2 -->
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img src="../assets/jumbo.jpeg">
+            <a routerLink=""><img src="../assets/jumbo.jpeg"></a>
             <nav class="navbar navbar-default">
               <div class="container-fluid">
                 <div>
                   <p class="navbar-text navbar-left"><a routerLink="/browseCategory">***Category***</a></p>
                 </div>
                 <div>
-                  <p class="navbar-text navbar-right"><a routerLink="">$</a></p>
+                  <p class="navbar-text navbar-right">$</p>
                 </div>
               </div>
             </nav>
             <div class="caption">
-              <h4 style="text-align: center">***Campaign Title***</h4>
-              <h5 style="text-align: center">By: ***Campaign Creator***</h5>
+              <h4 style="text-align: center"><a routerLink="">***Campaign Title***</a></h4>
+              <h5 style="text-align: center"><a routerLink="/profile">By: ***Campaign Creator***</a></h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magnam ipsum assumenda perspiciatis veritatis quisquam labore ad iusto voluptatum commodi aperiam a autem, neque vero voluptas, consequuntur vel eum expedita.</p>
             </div>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
                 100%
               </div>
             </div>
             <div class="row">
               <div class="col-md-12" style="text-align: center">
                 <h3><b>$10,000</b> raised!</h3>
+                <h6>With 35 people!</h6>
               </div>
               <div class="col-md-6" style="text-align: center">
                 <h6>Goal</h6>
@@ -237,38 +258,40 @@
               </div>
               <div class="col-md-6" style="text-align: center">
                 <h6>Days Left</h6>
-                <h5><b>0</b></h5>
+                <h5><b style="color: red">0</b></h5>
               </div>
             </div>
           </div>
         </div>
-  
+
+        <!-- Card 3 -->
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img src="../assets/jumbo.jpeg">
+            <a routerLink=""><img src="../assets/jumbo.jpeg"></a>
             <nav class="navbar navbar-default">
               <div class="container-fluid">
                 <div>
                   <p class="navbar-text navbar-left"><a routerLink="/browseCategory">***Category***</a></p>
                 </div>
                 <div>
-                  <p class="navbar-text navbar-right"><a routerLink="">$</a></p>
+                  <p class="navbar-text navbar-right">$</p>
                 </div>
               </div>
             </nav>
             <div class="caption">
-              <h4 style="text-align: center">***Campaign Title***</h4>
-              <h5 style="text-align: center">By: ***Campaign Creator***</h5>
+              <h4 style="text-align: center"><a routerLink="">***Campaign Title***</a></h4>
+              <h5 style="text-align: center"><a routerLink="/profile">By: ***Campaign Creator***</a></h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magnam ipsum assumenda perspiciatis veritatis quisquam labore ad iusto voluptatum commodi aperiam a autem, neque vero voluptas, consequuntur vel eum expedita.</p>
             </div>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
                 100%
               </div>
             </div>
             <div class="row">
               <div class="col-md-12" style="text-align: center">
                 <h3><b>$10,000</b> raised!</h3>
+                <h6>With 35 people!</h6>
               </div>
               <div class="col-md-6" style="text-align: center">
                 <h6>Goal</h6>
@@ -276,7 +299,7 @@
               </div>
               <div class="col-md-6" style="text-align: center">
                 <h6>Days Left</h6>
-                <h5><b>0</b></h5>
+                <h5><b style="color: red">0</b></h5>
               </div>
             </div>
           </div>
