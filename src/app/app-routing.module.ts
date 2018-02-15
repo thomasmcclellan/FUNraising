@@ -8,7 +8,6 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { ProfileComponent } from './profile/profile.component';
-import { CampaignComponent } from './campaign/campaign.component';
 
 import { FindCampaignSnapshotComponent } from './findCampaign/find-campaign-snapshot/find-campaign-snapshot.component';
 import { FindCampaignComponent } from './findCampaign/find-campaign/find-campaign.component';
@@ -37,7 +36,6 @@ const appRoutes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'pricing', component: PricingComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'campaign', component: CampaignComponent },
 
   { path: 'snapshot', component: FindCampaignSnapshotComponent },
   { path: 'findCampaign', component: FindCampaignComponent },

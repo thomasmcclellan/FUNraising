@@ -8,12 +8,11 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { HowToSucceedComponent } from './how-to-succeed/how-to-succeed.component';
+import { FaqComponent } from './faq/faq.component';
 import { AboutComponent } from './about/about.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProfileComponent } from './profile/profile.component';
-import { CampaignComponent } from './campaign/campaign.component';
-import { FaqComponent } from './faq/faq.component';
 
 import { FindCampaignSnapshotComponent } from './findCampaign/find-campaign-snapshot/find-campaign-snapshot.component';
 import { FindCampaignComponent } from './findCampaign/find-campaign/find-campaign.component';
@@ -45,7 +44,6 @@ import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.compo
     PricingComponent,
     ContactComponent,
     ProfileComponent,
-    CampaignComponent,
     
     FindCampaignSnapshotComponent,
     FindCampaignComponent,
