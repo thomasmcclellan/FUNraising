@@ -29,6 +29,7 @@ import { StartCampaignPersonalForm2Component } from './startCampaign/personalCau
 import { StartCampaignPersonalConfirmComponent } from './startCampaign/personalCause/start-campaign-personal-confirm/start-campaign-personal-confirm.component';
 
 import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.component';
+import { GivingCampaignPageComponent } from './giving/giving-campaign-page/giving-campaign-page.component';
 
 
 @NgModule({
@@ -60,6 +61,8 @@ import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.compo
     StartCampaignPersonalConfirmComponent,
     
     DeleteCampaignComponent,
+    
+    GivingCampaignPageComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,17 +1,25 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
 import { HomeComponent } from './home/home.component';
+
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { HowToSucceedComponent } from './how-to-succeed/how-to-succeed.component';
 import { FaqComponent } from './faq/faq.component';
+
 import { AboutComponent } from './about/about.component';
+
 import { ContactComponent } from './contact/contact.component';
+
 import { PricingComponent } from './pricing/pricing.component';
+
 import { ProfileComponent } from './profile/profile.component';
 
 import { FindCampaignSnapshotComponent } from './findCampaign/find-campaign-snapshot/find-campaign-snapshot.component';
 import { FindCampaignComponent } from './findCampaign/find-campaign/find-campaign.component';
 import { FindCampaignCategoryComponent } from './findCampaign/find-campaign-category/find-campaign-category.component';
+
+import { GivingCampaignPageComponent } from './giving/giving-campaign-page/giving-campaign-page.component';
 
 import { StartCampaignComponent } from './startCampaign/start-campaign/start-campaign.component';
 import { StartCampaignNonProfitSuccessComponent } from './startCampaign/nonProfit/start-campaign-non-profit-success/start-campaign-non-profit-success.component';
@@ -29,17 +37,24 @@ import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.compo
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+
   { path: 'howItWorks', component: HowItWorksComponent },
   { path: 'howToSucceed', component: HowToSucceedComponent },
   { path: 'faq', component: FaqComponent },
+
   { path: 'about', component: AboutComponent },
+
   { path: 'contact', component: ContactComponent },
+
   { path: 'pricing', component: PricingComponent },
+
   { path: 'profile', component: ProfileComponent },
 
   { path: 'snapshot', component: FindCampaignSnapshotComponent },
   { path: 'findCampaign', component: FindCampaignComponent },
   { path: 'browseCategory', component: FindCampaignCategoryComponent },
+
+  { path: 'campaignPage', component: GivingCampaignPageComponent },
 
   { path: 'startCampaign', component: StartCampaignComponent },
   { path: 'startCampaign-nonprofit-success', component: StartCampaignNonProfitSuccessComponent },
