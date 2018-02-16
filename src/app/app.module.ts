@@ -18,6 +18,7 @@ import { FindCampaignCategoryComponent } from './findCampaign/find-campaign-cate
 import { GivingCampaignPageComponent } from './giving/giving-campaign-page/giving-campaign-page.component'
 ;import { GivingEnvelopeWallComponent } from './giving/giving-envelope-wall/giving-envelope-wall.component';
 import { GivingDonateComponent } from './giving/giving-donate/giving-donate.component';
+import { CancelPaymentComponent } from './giving/cancel-payment/cancel-payment.component';
 import { StartCampaignComponent } from './startCampaign/start-campaign/start-campaign.component';
 import { StartCampaignNonProfitSuccessComponent } from './startCampaign/nonProfit/start-campaign-non-profit-success/start-campaign-non-profit-success.component';
 import { StartCampaignNonProfitForm1Component } from './startCampaign/nonProfit/start-campaign-non-profit-form1/start-campaign-non-profit-form1.component';
@@ -49,6 +50,7 @@ import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.compo
     GivingCampaignPageComponent,
     GivingEnvelopeWallComponent,
     GivingDonateComponent,
+    CancelPaymentComponent,
     StartCampaignComponent,
     StartCampaignNonProfitSuccessComponent,
     StartCampaignNonProfitForm1Component,
