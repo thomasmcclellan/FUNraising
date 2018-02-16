@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -13,11 +12,12 @@ import { AboutComponent } from './about/about.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProfileComponent } from './profile/profile.component';
-
 import { FindCampaignSnapshotComponent } from './findCampaign/find-campaign-snapshot/find-campaign-snapshot.component';
 import { FindCampaignComponent } from './findCampaign/find-campaign/find-campaign.component';
 import { FindCampaignCategoryComponent } from './findCampaign/find-campaign-category/find-campaign-category.component';
-
+import { GivingCampaignPageComponent } from './giving/giving-campaign-page/giving-campaign-page.component'
+;import { GivingEnvelopeWallComponent } from './giving/giving-envelope-wall/giving-envelope-wall.component';
+import { GivingDonateComponent } from './giving/giving-donate/giving-donate.component';
 import { StartCampaignComponent } from './startCampaign/start-campaign/start-campaign.component';
 import { StartCampaignNonProfitSuccessComponent } from './startCampaign/nonProfit/start-campaign-non-profit-success/start-campaign-non-profit-success.component';
 import { StartCampaignNonProfitForm1Component } from './startCampaign/nonProfit/start-campaign-non-profit-form1/start-campaign-non-profit-form1.component';
@@ -27,11 +27,7 @@ import { StartCampaignPersonalSuccessComponent } from './startCampaign/personalC
 import { StartCampaignPersonalForm1Component } from './startCampaign/personalCause/start-campaign-personal-form1/start-campaign-personal-form1.component';
 import { StartCampaignPersonalForm2Component } from './startCampaign/personalCause/start-campaign-personal-form2/start-campaign-personal-form2.component';
 import { StartCampaignPersonalConfirmComponent } from './startCampaign/personalCause/start-campaign-personal-confirm/start-campaign-personal-confirm.component';
-
 import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.component';
-import { GivingCampaignPageComponent } from './giving/giving-campaign-page/giving-campaign-page.component';
-import { GivingDonateComponent } from './giving/giving-donate/giving-donate.component';
-import { GivingEnvelopeWallComponent } from './giving/giving-envelope-wall/giving-envelope-wall.component';
 
 
 @NgModule({
@@ -47,11 +43,12 @@ import { GivingEnvelopeWallComponent } from './giving/giving-envelope-wall/givin
     PricingComponent,
     ContactComponent,
     ProfileComponent,
-    
     FindCampaignSnapshotComponent,
     FindCampaignComponent,
     FindCampaignCategoryComponent,
-
+    GivingCampaignPageComponent,
+    GivingEnvelopeWallComponent,
+    GivingDonateComponent,
     StartCampaignComponent,
     StartCampaignNonProfitSuccessComponent,
     StartCampaignNonProfitForm1Component,
@@ -61,20 +58,16 @@ import { GivingEnvelopeWallComponent } from './giving/giving-envelope-wall/givin
     StartCampaignPersonalForm1Component,
     StartCampaignPersonalForm2Component,
     StartCampaignPersonalConfirmComponent,
-    
-    DeleteCampaignComponent,
-    
-    GivingCampaignPageComponent,
-    
-    GivingDonateComponent,
-    
-    GivingEnvelopeWallComponent,
+    DeleteCampaignComponent
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
+
   providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
