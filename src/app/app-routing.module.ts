@@ -20,6 +20,7 @@ import { FindCampaignComponent } from './findCampaign/find-campaign/find-campaig
 import { FindCampaignCategoryComponent } from './findCampaign/find-campaign-category/find-campaign-category.component';
 
 import { GivingCampaignPageComponent } from './giving/giving-campaign-page/giving-campaign-page.component';
+import { GivingDonateComponent } from './giving/giving-donate/giving-donate.component';
 
 import { StartCampaignComponent } from './startCampaign/start-campaign/start-campaign.component';
 import { StartCampaignNonProfitSuccessComponent } from './startCampaign/nonProfit/start-campaign-non-profit-success/start-campaign-non-profit-success.component';
@@ -32,6 +33,7 @@ import { StartCampaignPersonalForm2Component } from './startCampaign/personalCau
 import { StartCampaignPersonalConfirmComponent } from './startCampaign/personalCause/start-campaign-personal-confirm/start-campaign-personal-confirm.component';
 
 import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.component';
+import { GivingEnvelopeWallComponent } from './giving/giving-envelope-wall/giving-envelope-wall.component';
 
 
 const appRoutes: Routes = [
@@ -55,6 +57,8 @@ const appRoutes: Routes = [
   { path: 'browseCategory', component: FindCampaignCategoryComponent },
 
   { path: 'campaignPage', component: GivingCampaignPageComponent },
+  { path: 'envelopeWall', component: GivingEnvelopeWallComponent },
+  { path: 'donate', component: GivingDonateComponent },
 
   { path: 'startCampaign', component: StartCampaignComponent },
   { path: 'startCampaign-nonprofit-success', component: StartCampaignNonProfitSuccessComponent },

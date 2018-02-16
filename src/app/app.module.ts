@@ -30,6 +30,8 @@ import { StartCampaignPersonalConfirmComponent } from './startCampaign/personalC
 
 import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.component';
 import { GivingCampaignPageComponent } from './giving/giving-campaign-page/giving-campaign-page.component';
+import { GivingDonateComponent } from './giving/giving-donate/giving-donate.component';
+import { GivingEnvelopeWallComponent } from './giving/giving-envelope-wall/giving-envelope-wall.component';
 
 
 @NgModule({
@@ -63,6 +65,10 @@ import { GivingCampaignPageComponent } from './giving/giving-campaign-page/givin
     DeleteCampaignComponent,
     
     GivingCampaignPageComponent,
+    
+    GivingDonateComponent,
+    
+    GivingEnvelopeWallComponent,
   ],
   imports: [
     BrowserModule,
