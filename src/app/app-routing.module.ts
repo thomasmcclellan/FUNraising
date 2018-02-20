@@ -36,6 +36,8 @@ import { StartCampaignPersonalConfirmComponent } from './startCampaign/personalC
 
 import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.component';
 
+import { AdminComponent } from './admin/admin.component';
+
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -72,7 +74,9 @@ const appRoutes: Routes = [
   { path: 'startCampaign-personalCause-form2', component: StartCampaignPersonalForm2Component },
   { path: 'startCampaign-personalCause-confirmation', component: StartCampaignPersonalConfirmComponent },
 
-  { path: 'deleteCampaign', component: DeleteCampaignComponent }
+  { path: 'deleteCampaign', component: DeleteCampaignComponent },
+
+  { path: 'admin', component: AdminComponent }
 ]
 
 @NgModule({
