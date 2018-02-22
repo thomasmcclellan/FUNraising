@@ -9,7 +9,6 @@ import { FaqComponent } from '../faq/faq.component';
 import { AboutComponent } from '../about/about.component';
 import { ContactComponent } from '../contact/contact.component';
 import { PricingComponent } from '../pricing/pricing.component';
-import { AdminComponent } from '../admin/admin.component';
 import { ProfileComponent } from '../campaign/profile/profile.component';
 import { FindCampaignComponent } from '../campaign/findCampaign/find-campaign/find-campaign.component';
 import { FindCampaignSnapshotComponent } from '../campaign/findCampaign/find-campaign-snapshot/find-campaign-snapshot.component';
@@ -36,8 +35,6 @@ const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'pricing', component: PricingComponent },
-
-  { path: 'admin', component: AdminComponent }
 ]
 
 @NgModule({

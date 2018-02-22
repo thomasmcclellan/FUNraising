@@ -17,32 +17,32 @@ import { StartCampaignConfirmComponent } from '../campaign/startCampaign/shared/
 import { DeleteCampaignComponent } from '../campaign/delete-campaign/delete-campaign.component';
 
 
-  const campaignRoutes: Routes = [
-    { path: 'profile', component: ProfileComponent },
+const campaignRoutes: Routes = [
+  { path: 'profile', component: ProfileComponent },
 
-    { path: 'snapshot', component: FindCampaignSnapshotComponent },
-    { path: 'findCampaign', component: FindCampaignComponent },
-    { path: 'browseCategory', component: FindCampaignCategoryComponent },
+  { path: 'snapshot', component: FindCampaignSnapshotComponent },
+  { path: 'findCampaign', component: FindCampaignComponent },
+  { path: 'browseCategory', component: FindCampaignCategoryComponent },
 
-    { path: 'campaignPage', component: GivingCampaignPageComponent },
-    { path: 'envelopeWall', component: GivingEnvelopeWallComponent },
-    { path: 'donate', component: GivingDonateComponent },
-    { path: 'cancelPayment', component: CancelPaymentComponent },
+  { path: 'campaignPage', component: GivingCampaignPageComponent },
+  { path: 'envelopeWall', component: GivingEnvelopeWallComponent },
+  { path: 'donate', component: GivingDonateComponent },
+  { path: 'cancelPayment', component: CancelPaymentComponent },
 
-    { path: 'startCampaign', component: StartCampaignComponent },
-    { path: 'startCampaign-success', component: StartCampaignSuccessComponent },
-    { path: 'startCampaign-form1', component: StartCampaignForm1Component },
-    { path: 'startCampaign-form2', component: StartCampaignForm2Component },
-    { path: 'startCampaign-confirmation', component: StartCampaignConfirmComponent },
+  { path: 'startCampaign', component: StartCampaignComponent },
+  { path: 'startCampaign-success', component: StartCampaignSuccessComponent },
+  { path: 'startCampaign-form1', component: StartCampaignForm1Component },
+  { path: 'startCampaign-form2', component: StartCampaignForm2Component },
+  { path: 'startCampaign-confirmation', component: StartCampaignConfirmComponent },
 
-    { path: 'deleteCampaign', component: DeleteCampaignComponent },
-  ];
-  @NgModule({
-    imports: [
-      RouterModule.forRoot(campaignRoutes)
-    ],
-    exports: [
-      RouterModule
-    ]
-  })
+  { path: 'deleteCampaign', component: DeleteCampaignComponent },
+];
+@NgModule({
+  imports: [
+    RouterModule.forRoot(campaignRoutes)
+  ],
+  exports: [
+    RouterModule
+  ]
+})
 export class CampaignRoutingModule { }

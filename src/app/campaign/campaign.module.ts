@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from '@angular/router';
+import { CampaignRoutingModule } from '../shared/campaign-routing.module';
 
 import { ProfileComponent } from './profile/profile.component';
 import { FindCampaignSnapshotComponent } from './findCampaign/find-campaign-snapshot/find-campaign-snapshot.component';
@@ -16,28 +16,7 @@ import { StartCampaignForm1Component } from './startCampaign/shared/start-campai
 import { StartCampaignForm2Component } from './startCampaign/shared/start-campaign-form2/start-campaign-form2.component';
 import { StartCampaignConfirmComponent } from './startCampaign/shared/start-campaign-confirm/start-campaign-confirm.component';
 import { DeleteCampaignComponent } from './delete-campaign/delete-campaign.component';
-import { CampaignRoutingModule } from './campaign-routing.module';
 
-const Routes = [
-  { path: 'profile', component: ProfileComponent },
-
-  { path: 'snapshot', component: FindCampaignSnapshotComponent },
-  { path: 'findCampaign', component: FindCampaignComponent },
-  { path: 'browseCategory', component: FindCampaignCategoryComponent },
-
-  { path: 'campaignPage', component: GivingCampaignPageComponent },
-  { path: 'envelopeWall', component: GivingEnvelopeWallComponent },
-  { path: 'donate', component: GivingDonateComponent },
-  { path: 'cancelPayment', component: CancelPaymentComponent },
-
-  { path: 'startCampaign', component: StartCampaignComponent },
-  { path: 'startCampaign-success', component: StartCampaignSuccessComponent },
-  { path: 'startCampaign-form1', component: StartCampaignForm1Component },
-  { path: 'startCampaign-form2', component: StartCampaignForm2Component },
-  { path: 'startCampaign-confirmation', component: StartCampaignConfirmComponent },
-
-  { path: 'deleteCampaign', component: DeleteCampaignComponent },
-]
 
 @NgModule({
   imports: [
