@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AdminRoutingModule } from '../shared/admin-routing.module';
 
 import { AdminComponent } from './admin.component';
+import { AdminDetailComponent } from './shared/admin-detail/admin-detail.component';
 
 @NgModule({
   imports: [
@@ -10,7 +11,8 @@ import { AdminComponent } from './admin.component';
     AdminRoutingModule
   ],
   declarations: [
-    AdminComponent
+    AdminComponent,
+    AdminDetailComponent
   ],
   exports: [
     AdminComponent
