@@ -6,15 +6,15 @@ import { CampaignModule } from './campaign/campaign.module';
 import { AppRoutingModule } from './shared/app-routing.module';
 import { AdminModule } from './admin/admin.module';
 
-import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './home/home.component';
-import { HowItWorksComponent } from './how-it-works/how-it-works.component';
-import { HowToSucceedComponent } from './how-to-succeed/how-to-succeed.component';
-import { FaqComponent } from './faq/faq.component';
-import { AboutComponent } from './about/about.component';
-import { PricingComponent } from './pricing/pricing.component';
-import { ContactComponent } from './contact/contact.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
+import { HowToSucceedComponent } from './components/how-to-succeed/how-to-succeed.component';
+import { FaqComponent } from './components/faq/faq.component';
+import { AboutComponent } from './components/about/about.component';
+import { PricingComponent } from './components/pricing/pricing.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({
