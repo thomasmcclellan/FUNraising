@@ -10,6 +10,7 @@ export class AdminListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
