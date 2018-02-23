@@ -8,26 +8,7 @@
     <h1 style="text-align: center">Todah Administration</h1>
     <h3 style="text-align: center">Select your ***Item***</h3>
     <div class="col-md-12">
-      <table class="table table-hover table-bordered table-striped table-condensed">
-        <thead>
-          <tr class="info">
-            <th colspan="10">
-              <div class="col-md-8">
-                <form class="navbar-form">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search ***Item***" style="border-radius: 5em 0 0 5em">
-                    <span class="input-group-btn">
-                      <button class="btn btn-primary" type="button" style="border-radius: 0 5em 5em 0">Search</button>
-                    </span>
-                  </div>
-                </form>
-              </div>
-              <div class="col-md-4">
-                <button type="button" class="btn btn-primary" style="float: right; border-radius: 5em"><i class="fas fa-plus"></i> Add New ***Item***</button>
-              </div>
-            </th>
-          </tr>
-        </thead>
+      <table id="adminList" class="table table-hover table-bordered table-striped table-condensed">
         <thead>
           <tr class="info">
             <th>***Col 1***</th>
@@ -87,43 +68,167 @@
             <td><a routerLink="">Item 5F</a></td>
             <td><a routerLink="">Item 6F</a></td>
           </tr>
-        </tbody>
-
-        <!-- Pagination to show only if length exceeds 25 or so rows -->
-        <!-- Pagination currently not working -->
-        <thead>
-          <tr class="info">
-            <th colspan="10">
-              <ul class="pagination pagination-sm">
-                <li class="disabled">
-                  <span style="border-radius: 5em 0 0 5em">
-                    <span aria-hidden="true">&laquo;</span>
-                  </span>
-                </li>
-                <li class="active">
-                  <span>1<span aria-hidden="sr-only"></span></span>
-                </li>
-                <li>
-                  <span>2<span aria-hidden="sr-only"></span></span>
-                </li>
-                <li>
-                  <span>3<span aria-hidden="sr-only"></span></span>
-                </li>
-                <li>
-                  <span>4<span aria-hidden="sr-only"></span></span>
-                </li>
-                <li>
-                  <span>5<span aria-hidden="sr-only"></span></span>
-                </li>
-                <li>
-                  <span style="border-radius: 0 5em 5em 0">
-                    <span aria-hidden="true">&raquo;</span>
-                  </span>
-                </li>
-              </ul>
-            </th>
+          <tr>
+            <td><a routerLink="">Item 1G</a></td>
+            <td><a routerLink="">Item 2G</a></td>
+            <td><a routerLink="">Item 3G</a></td>
+            <td><a routerLink="">Item 4G</a></td>
+            <td><a routerLink="">Item 5G</a></td>
+            <td><a routerLink="">Item 6G</a></td>
           </tr>
-        </thead>
+          <tr>
+            <td><a routerLink="">Item 1H</a></td>
+            <td><a routerLink="">Item 2H</a></td>
+            <td><a routerLink="">Item 3H</a></td>
+            <td><a routerLink="">Item 4H</a></td>
+            <td><a routerLink="">Item 5H</a></td>
+            <td><a routerLink="">Item 6H</a></td>
+          </tr>
+          <tr>
+            <td><a routerLink="">Item 1I</a></td>
+            <td><a routerLink="">Item 2I</a></td>
+            <td><a routerLink="">Item 3I</a></td>
+            <td><a routerLink="">Item 4I</a></td>
+            <td><a routerLink="">Item 5I</a></td>
+            <td><a routerLink="">Item 6I</a></td>
+          </tr>
+          <tr>
+            <td><a routerLink="">Item 1J</a></td>
+            <td><a routerLink="">Item 2J</a></td>
+            <td><a routerLink="">Item 3J</a></td>
+            <td><a routerLink="">Item 4J</a></td>
+            <td><a routerLink="">Item 5J</a></td>
+            <td><a routerLink="">Item 6J</a></td>
+          </tr>
+          <tr>
+            <td><a routerLink="">Item 1K</a></td>
+            <td><a routerLink="">Item 2K</a></td>
+            <td><a routerLink="">Item 3K</a></td>
+            <td><a routerLink="">Item 4K</a></td>
+            <td><a routerLink="">Item 5K</a></td>
+            <td><a routerLink="">Item 6K</a></td>
+          </tr>
+          <tr>
+            <td><a routerLink="">Item 1L</a></td>
+            <td><a routerLink="">Item 2L</a></td>
+            <td><a routerLink="">Item 3L</a></td>
+            <td><a routerLink="">Item 4L</a></td>
+            <td><a routerLink="">Item 5L</a></td>
+            <td><a routerLink="">Item 6L</a></td>
+          </tr>
+          <tr>
+            <td><a routerLink="">Item 1M</a></td>
+            <td><a routerLink="">Item 2M</a></td>
+            <td><a routerLink="">Item 3M</a></td>
+            <td><a routerLink="">Item 4M</a></td>
+            <td><a routerLink="">Item 5M</a></td>
+            <td><a routerLink="">Item 6M</a></td>
+          </tr>
+          <tr>
+            <td><a routerLink="">Item 1N</a></td>
+            <td><a routerLink="">Item 2N</a></td>
+            <td><a routerLink="">Item 3N</a></td>
+            <td><a routerLink="">Item 4N</a></td>
+            <td><a routerLink="">Item 5N</a></td>
+            <td><a routerLink="">Item 6N</a></td>
+          </tr>
+          <tr>
+            <td><a routerLink="">Item 1O</a></td>
+            <td><a routerLink="">Item 2O</a></td>
+            <td><a routerLink="">Item 3O</a></td>
+            <td><a routerLink="">Item 4O</a></td>
+            <td><a routerLink="">Item 5O</a></td>
+            <td><a routerLink="">Item 6O</a></td>
+          </tr>
+          <tr>
+            <td><a routerLink="">Item 1P</a></td>
+            <td><a routerLink="">Item 2P</a></td>
+            <td><a routerLink="">Item 3P</a></td>
+            <td><a routerLink="">Item 4P</a></td>
+            <td><a routerLink="">Item 5P</a></td>
+            <td><a routerLink="">Item 6P</a></td>
+          </tr>
+          <tr>
+            <td><a routerLink="">Item 1Q</a></td>
+            <td><a routerLink="">Item 2Q</a></td>
+            <td><a routerLink="">Item 3Q</a></td>
+            <td><a routerLink="">Item 4Q</a></td>
+            <td><a routerLink="">Item 5Q</a></td>
+            <td><a routerLink="">Item 6Q</a></td>
+          </tr>
+          <tr>
+            <td><a routerLink="">Item 1R</a></td>
+            <td><a routerLink="">Item 2R</a></td>
+            <td><a routerLink="">Item 3R</a></td>
+            <td><a routerLink="">Item 4R</a></td>
+            <td><a routerLink="">Item 5R</a></td>
+            <td><a routerLink="">Item 6R</a></td>
+          </tr>
+          <tr>
+            <td><a routerLink="">Item 1S</a></td>
+            <td><a routerLink="">Item 2S</a></td>
+            <td><a routerLink="">Item 3S</a></td>
+            <td><a routerLink="">Item 4S</a></td>
+            <td><a routerLink="">Item 5S</a></td>
+            <td><a routerLink="">Item 6S</a></td>
+          </tr>
+          <tr>
+            <td><a routerLink="">Item 1T</a></td>
+            <td><a routerLink="">Item 2T</a></td>
+            <td><a routerLink="">Item 3T</a></td>
+            <td><a routerLink="">Item 4T</a></td>
+            <td><a routerLink="">Item 5T</a></td>
+            <td><a routerLink="">Item 6T</a></td>
+          </tr>
+          <tr>
+            <td><a routerLink="">Item 1U</a></td>
+            <td><a routerLink="">Item 2U</a></td>
+            <td><a routerLink="">Item 3U</a></td>
+            <td><a routerLink="">Item 4U</a></td>
+            <td><a routerLink="">Item 5U</a></td>
+            <td><a routerLink="">Item 6U</a></td>
+          </tr>
+          <tr>
+            <td><a routerLink="">Item 1V</a></td>
+            <td><a routerLink="">Item 2V</a></td>
+            <td><a routerLink="">Item 3V</a></td>
+            <td><a routerLink="">Item 4V</a></td>
+            <td><a routerLink="">Item 5V</a></td>
+            <td><a routerLink="">Item 6V</a></td>
+          </tr>
+          <tr>
+            <td><a routerLink="">Item 1W</a></td>
+            <td><a routerLink="">Item 2W</a></td>
+            <td><a routerLink="">Item 3W</a></td>
+            <td><a routerLink="">Item 4W</a></td>
+            <td><a routerLink="">Item 5W</a></td>
+            <td><a routerLink="">Item 6W</a></td>
+          </tr>
+          <tr>
+            <td><a routerLink="">Item 1X</a></td>
+            <td><a routerLink="">Item 2X</a></td>
+            <td><a routerLink="">Item 3X</a></td>
+            <td><a routerLink="">Item 4X</a></td>
+            <td><a routerLink="">Item 5X</a></td>
+            <td><a routerLink="">Item 6X</a></td>
+          </tr>
+          <tr>
+            <td><a routerLink="">Item 1Y</a></td>
+            <td><a routerLink="">Item 2Y</a></td>
+            <td><a routerLink="">Item 3Y</a></td>
+            <td><a routerLink="">Item 4Y</a></td>
+            <td><a routerLink="">Item 5Y</a></td>
+            <td><a routerLink="">Item 6Y</a></td>
+          </tr>
+          <tr>
+            <td><a routerLink="">Item 1Z</a></td>
+            <td><a routerLink="">Item 2Z</a></td>
+            <td><a routerLink="">Item 3Z</a></td>
+            <td><a routerLink="">Item 4Z</a></td>
+            <td><a routerLink="">Item 5Z</a></td>
+            <td><a routerLink="">Item 6Z</a></td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>
