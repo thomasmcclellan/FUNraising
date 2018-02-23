@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AdminComponent } from '../admin/admin.component';
-import { AdminDetailComponent } from '../admin/shared/admin-detail/admin-detail.component';
+import { AdminComponent } from '../admin/components/admin.component';
+import { AdminListComponent } from '../admin/shared/admin-list/admin-list.component';
+import { AccountDetailComponent } from '../admin/components/account-detail/account-detail.component';
 
 
 const adminRoutes: Routes = [
   { path: 'admin', component: AdminComponent },
-  { path: 'adminDetail', component: AdminDetailComponent },
+  { path: 'adminList', component: AdminListComponent },
+  { path: 'accountDetail', component: AccountDetailComponent }
 ];
 @NgModule({
   imports: [
